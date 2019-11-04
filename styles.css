@@ -2,9 +2,15 @@
     width: 200px;
  margin-bottom: auto;
 }
+
 #buttonCss{
     display: inline-block;
 color: white;
 background-color: #0cbbb4;
 }
+
+.bloc1{
+    display: inline-block;
+}
+
 

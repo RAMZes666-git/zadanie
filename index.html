@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>задание</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <form method="post" action="code.php">
-        <div> модели
-            <select class="sccClass" type="text" name="select[]" multiple size="4">
-                <option value="1"> колонка 1 </option>
-                <option value="2"> колонка 2 </option>
-                <option value="3"> колонка 3 </option>
-                <option value="4"> колонка 4 </option>
-            </select>
+        <div>
+            <div class="bloc1"> модели  </div>
+                <div class="bloc1">
+                    <select class="sccClass" type="text" name="select[]" multiple size="4">
+                            <option value="1"> столбец 1 </option>
+                            <option value="2"> столбец 2 </option>
+                            <option value="3"> столбец 3 </option>
+                            <option value="4"> столбец 4 </option>
+                    </select>
+                </div>
+
+                <div class="bloc1">
+                    <select name="filter">
+                        <option  disabled selected> выберите фильтр</option>
+                        <option value="1"> равно</option>
+                        <option value="2"> больше</option>
+                        <option value="3"> меньше</option>
+                    </select>
+                </div>
+
+                <div class="bloc1">
+                    <input type="text" name="filter_value">
+                </div>
         </div>
 
-        <div> введите кол-во строк
-            <input class="sccClass" type="text" name="row">
-        </div>
 
         <input id="buttonCss" type="submit" value="Парсить">
     </form>
